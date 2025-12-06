@@ -21,7 +21,7 @@ class SQLCallbackHandler(BaseCallbackHandler):
             tool_name = getattr(tool, 'name', None)
         if tool_name == "sql_db_query":
             self.sql_query = input_str
-# --------------------------------------------- Database Connection ----------------------------------------------------
+# --------------------------------------------- Database Connection ---------------------------------------------------
 username = os.getenv("DB_USERNAME")
 password = quote_plus(os.getenv("DB_PASSWORD"))
 host = os.getenv("DB_HOST")
